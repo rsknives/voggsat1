@@ -181,7 +181,28 @@ input[type=submit] {
 .input2 {
   width: 200px;
 }
-   
+
+/* Radio */ 
+
+table {
+  font-size: 12px;
 }
+
+#rxData {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+
+.grid-form {
+  max-width: 210px;
+}
+
+.baseradio {
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+}
+
 
 
