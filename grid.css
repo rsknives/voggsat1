@@ -25,6 +25,12 @@
     border-radius: 0 0 30px 30px;
 }
 
+.table-base1 { 
+    max-width: 1130px;
+    margin: 0 auto;
+    height: auto;
+}
+
 .table-base .grid-table {
     margin: 0 auto;
 }
@@ -140,4 +146,14 @@
     margin: 0 auto;
     align-content: center;
     padding-bottom: 15px;
+}
+
+#rxData {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.grid-form .inputsalvar {
+    grid-column: 2;
 }
