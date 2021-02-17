@@ -172,4 +172,12 @@ input[type=submit] {
   margin: 0 auto;
 }
     
+/* serve */
+
+.grid-form1 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.input2 {
+  width: 200px;
 }
