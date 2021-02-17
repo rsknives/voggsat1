@@ -187,6 +187,10 @@ h1 {
     display: none;
 }
 
+#rxOfflineActive {
+    display: none;
+}
+
 .switch {
     color: #ffffff;
     font-size: 18px;
@@ -263,6 +267,10 @@ input:checked+.switch {
 
 .input2 {
     width: 400px;
+}
+
+.input3 {
+    width: 200px ;
 }
 
 .btncheck {
@@ -363,8 +371,63 @@ input:checked+.slider {
 .slider1 {
     display: block;
     text-align: center;
+    font-weight: bold;
     padding: 3px;
-    width: 300px;
+    max-width: 300px;
     height: 40px;
 }
 
+.submit1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+    height: 40px;
+    max-width: 300px;
+    background: #1606FF;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 2px #161616;
+    align-items: center;
+}
+
+.submit1 input[type=file]{
+    max-width: 118px;
+    padding-left: 25px;
+}
+.submit1 input[type=submit] {
+    box-shadow: none;
+}
+
+/* table */ 
+
+table {  
+    margin-top: 10px;
+    border-spacing: 0;
+    width: 100%;
+    background: #1606FF;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.button {
+    margin-top: 10px;
+    float: right;
+    background: #1606FF;   
+}
+
+input.buttonlayer {
+    background: #1606FF;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+input.buttonlayer1 {
+    height: 10px;
+    background: #fff;
+    border-radius: 30px;
+    border:none;
+    cursor: pointer;
+}
