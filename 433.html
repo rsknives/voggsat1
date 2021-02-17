@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <title>Voggsat</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, 
     initial-sacale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" 
-    href="style.css">
-    <link rel="stylesheet" type="text/css" 
-    href="grid.css">
-    <link rel="stylesheet" type="text/css" 
-    href="responsivo.css">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link rel="stylesheet" type="text/css" href="responsivo.css">  
     <script type="text/javascript" src="./james.js"></script>
 </head>
-<body>
+<body onload="getGrid('433')">
     <div class="container">
         <section class="table-base">
             <div class="titulo">
@@ -33,7 +30,71 @@
                 </div>
                 </form>
 
+                <form method='POST' action='upload' enctype='multipart/form-data'>
+                    <div class="submit1">							
+                        <input  type='file' name='update' placeholder="Arquivo Permissões">
+                        <input  type='submit' value='UPLOAD'>
+                    </div>
+                </div>		
+            </form>
+
+            <div class="base">
+                <form action="/set433data">
+                 <input type="hidden" id="version" name="version" value="1.0" />
+
+                    <div class="btncheck">
+                        <label class="switch">
+						<input type="checkbox" name="rxOfflineActive" id="rxOfflineActive"
+							onclick="checkSwitch('rxOfflineActive','rxData')" #rxOfflineActive#>
+						<span class="switch round fontbtn">Ativar Offline ></span>
+                        </label>
+                    </div>
+
+                    <div id="rxData" style="display: none;">
+                        <div class="grid-form">
+                            <div class="item1">
+                                <label>Porta :</label>
+                            </div>
+                            <div class="select">
+                                <input class="input3" type="text" maxlength="2" id="rxPort" name="rxPort"
+                                    placeholder="Porta associada rádio(Padrão 7).."
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" value="#rxPort#">
+                            </div>
+                            <div class="item1">
+                                <label>Tempo :</label>
+                            </div>
+                            <div class="select">
+                                <input class="input3" type="text" maxlength="4" id="rxTime" name="rxTime"
+                                    placeholder="tempo do pulso na porta(Padrão 1).."
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" value="#rxTime#">
+                            </div>
+                            <div class="item1">
+                                <label>Delay :</label>
+                            </div>
+                            <div class="select">
+                                <input class="input3" type="text" maxlength="4" id="rxDelay" name="rxDelay"
+                                    placeholder="Atraso no pulso(Padrão 0).."
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" value="#rxDelay#">
+                            </div>
+                            <div class="inputsalvar">
+                                <input type="submit" value="SALVAR">
+                            </div>
+                        </div>            
+        
+                    </div>                    
+                </form>
             </div>        
+        </section>
+        <section class="table-base1">
+
+        <div class="button">
+            <input  class="buttonlayer" type="button" value="<" onclick="priorPage('433')">
+            <input  class="buttonlayer1" type="button" value="" onclick="loadData('433')">
+            <input class="buttonlayer" type="button" value=">" onclick="nextPage('433')">
+        </div>
+         
+        <table id="lines">            
+        </table>
         </section>
     </div>
 </body>
