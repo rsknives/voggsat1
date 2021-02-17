@@ -58,6 +58,8 @@ iframe {
      display: flex;
      list-style: none;
      flex-wrap: wrap;
+     float: right;
+
  }
 
  .nav-menu ul li a {
@@ -173,6 +175,18 @@ h1 {
     display: none;
 }
 
+#mqttActive {
+    display: none;
+}
+
+#cayActive {
+    display: none;
+}
+
+#rxIsActive {
+    display: none;
+}
+
 .switch {
     color: #ffffff;
     font-size: 18px;
@@ -232,7 +246,7 @@ input:checked+.switch {
 }
 
 .grid-wifi {
-    font-size: 15p;
+    font-size: 15px;
     font-family: Sitka Banner, sans-serif;
     color: #161616;
     font-weight: bold;
@@ -245,6 +259,10 @@ input:checked+.switch {
 
 .input1 {
     width: 142px;
+}
+
+.input2 {
+    width: 400px;
 }
 
 .btncheck {
@@ -269,7 +287,7 @@ input:checked+.switch {
 .btncheck .switch.round {
     transition: none;
     margin: 0;
-    width: 110px;
+    width: 140px;
     background: #5A5858;
     border-radius: 0;
 }
@@ -296,4 +314,15 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: rgb(14, 14, 14);
+}
+
+/* server */
+
+.btnconectar {
+    display: flex;
+    margin-top: 10px;
+}
+
+.btnconectar input {
+    margin: 0 auto;
 }
