@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voggsat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-sacale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" 
+    href="style.css">
+    <link rel="stylesheet" type="text/css" 
+    href="grid.css">
+    <link rel="stylesheet" type="text/css" 
+    href="responsivo.css">  
+    <script type="text/javascript" src="./james.js"></script>
+</head>
+<body>
+  <div class="container">
+      <section class="table-base">
+          <div class="titulo">
+              <h3>CONECTAR COM O SERVIDOR</h3>
+          </div>
+        </br>
+
+          <form action="/setnetworkdata">
+            <input type="hidden" id="version" name="version" value="1.0" />	
+
+        <div class="base">
+            <div class="btncheck">
+			<label class="switch">
+				<input type="checkbox" name="mqttActive" id="mqttActive" onclick="checkSwitch('mqttActive','mqttData')" #mqttActive#>
+				<span class="switch round fontbtn">Ativar Mqtt ></span>
+			</label>
+            </div>
+			
+			<div id="mqttData" style="display: none;">
+				<div class="grid-form1">
+                    <div class="item1">						
+                        <label>Servidor :</label>
+                    </div>
+					<div class="select">
+						<input class="input2" type="text" maxlength="40" id="srvMqtt" name="srvMqtt"
+							placeholder="Endereço do servidor mqtt.." value="#srvMqtt#">
+					</div>
+
+					<div class="item1">			
+                    	<label>Porta :</label>
+                    </div>
+
+					<div class="select">
+						<input class="input2" type="text" maxlength="5" id="mqttPort" name="mqttPort"
+							placeholder="Porta do servidor mqtt.."
+							onkeypress="return event.charCode >= 48 && event.charCode <= 57" value="#mqttPort#">
+					</div>
+                    <div class="item1">
+                    <label>Tópico :</label>
+                </div>
+					<div class="select">
+						<input class="input2" type="text" maxlength="30" id="mqttTopic" name="mqttTopic"
+							placeholder="Tópico do servidor Mqtt.." value="#mqttTopic#">
+					</div>
+
+                    <div class="item1">	
+                    	<label>Usuário :</label>
+                    </div>
+
+					<div class="select">
+						<input class="input2" type="text" maxlength="15" id="mqttUser" name="mqttUser"
+							placeholder="Usuário do servidor Mqtt.." value="#mqttUser#">
+					</div>
+
+                    <div class="item1">		
+                        <label>Senha :</label>
+                    </div>
+					<div class="select">
+						<input class="input2" type="password" maxlength="15" id="mqttPass" name="mqttPass"
+							placeholder="Senha do servidor Mqtt.." value="#mqttPass#">
+					</div>
+				
+		        </div>
+			</div>
+        </div>
+
+        <div class="base">
+            <div class="btncheck">
+                <label class="switch">
+				<input type="checkbox" name="cayActive" id="cayActive" onclick="checkSwitch('cayActive','cayenneData')" #cayActive#>
+				<span class="switch round fontbtn">Ativar Cayenne ></span>
+			    </label>
+            </div>
+
+			<div id="cayenneData" style="display: none;">
+				<div class="grid-form1">
+					<div class="item1">
+						<label>Usuário :</label>
+                    </div>
+                    <div class="select">
+						<input class="input2" type="text" maxlength="100" id="cayUser" name="cayUser" placeholder="Usuário do Caynne.." value="#cayUser#">
+					</div>
+
+					<div class="item1">
+						<label>Senha :</label>
+                    </div>
+                    <div class="select">
+						<input class="input2" type="password" maxlength="100" id="cayPass" name="cayPass"
+							placeholder="Senha do Caynne.." value="#cayPass#">
+					</div>
+					<div class="item1">
+						<label>Cliente ID :</label>
+                    </div>
+                    <div class="select">
+						<input class="input2" type="text" maxlength="100" id="cayClient" name="cayClient"
+							placeholder="Cliente ID do Caynne.." value="#cayClient#">
+					</div>
+				</div>
+			</div>
+            <div class="btnconectar">
+                <input type="submit" value="CONECTAR">
+            </div>
+		 </div>
+		</form>
+      </section>
+  </div>
+
+</body>
+</html>
