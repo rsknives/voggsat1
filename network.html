@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voggsat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-sacale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" 
+    href="style.css">
+    <link rel="stylesheet" type="text/css" 
+    href="grid.css">
+    <link rel="stylesheet" type="text/css" 
+    href="responsivo.css">  
+    <script type="text/javascript" src="./james.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="table-base">
+            <div class="titulo">
+            <h3>CONECTAR Wireless</h3>
+            </div>
+                 <div class="subtitulo1">
+                     <h1>Conexão Wi-fi</h1>
+                 </div>
+            <div>
+                 <input type="hidden" id="version" name="version" value="1.0" />
+                 <form action="/setnetworkdata">	
+                    <div class="grid-wifi">		
+                    <div>
+                        <label>SSID da rede :</label>
+                        <select class="select" id="wifiName" name="wifiName" placeholder="Selecione a sua rede wifi" value="#wifiName#">
+                            #wifilist#		
+                        </select>
+                    </div>
+                    <div>
+                        <label>Senha :</label>
+                        <input class="input1" type="password" maxlength="15" id="wifiPassword" name="wifiPassword"
+                            placeholder="Senha do wifi" value="#wifiPassword#">
+                    </div>
+                </div>
+                <div class="base">
+                    <div class="btncheck">
+                        <label class="switch">
+                            <input type="checkbox"  name="isFixedIp" id="isFixedIp"
+                                onclick="checkSwitch('isFixedIp','networkData')" #isFixedIp#>
+                            <span class="switch round fontbtn">IP Estádico ></span>
+                        </label>		
+                    </div>   
+                        <div id="networkData" style="display: none">      
+                            <div class="grid-form">                      
+                                <div>
+                                    <label>Endereço :</label>
+                                </div>
+                                <div class="select">
+                                    <input class="input1" type="text" maxlength="15" id="ipAddress" name="ipAddress"
+                                        placeholder="Endereço IP desejado (192.168.0.20)"
+                                        onkeypress="return event.charCode >= 46 && event.charCode <= 57" value="#ipAddress#">
+                                </div>
+                                <div>
+                                    <label>Mascara de rede :</label>
+                                </div>
+                                <div class="select">
+                                    <input class="input1" type="text" maxlength="15" id="mask" name="mask"
+                                        placeholder="Mascara de rede(255.255.255.0)."
+                                        onkeypress="return event.charCode >= 46 && event.charCode <= 57" value="#mask#">
+                                </div>
+                                <div>
+                                    <label>Gateway :</label>
+                                </div>
+                                <div class="select">
+                                    <input class="input1" type="text" maxlength="15" id="gateway" name="gateway"
+                                        placeholder="Getay padrão da rede(192.168.0.1)."
+                                        onkeypress="return event.charCode >= 46 && event.charCode <= 57" value="#gateway#">
+                                </div>
+                            
+                                <div>
+                                    <label>DNS Primário :</label>
+                                </div>
+                                <div class="select">
+                                    <input class="input1" type="text" maxlength="30" id="dns1" name="dns1" placeholder="DNS desejado (8.8.8.8)" value="#dns1#">                                
+                                </div>                            
+                                <div>
+                                    <label>DNS Secundário :</label>
+                                </div>
+                                <div class="select">
+                                    <input class="input1" type="text" maxlength="30" id="dns2" name="dns2" placeholder="DNS desejado (4.4.4.4)." value="#dns2#">
+                                </div>  
+                            </div>
+                                <input type="submit" value="SALVAR REDE">
+                        </div>
+                </div>
+                </form>
+            </div>
+            <div class="subtitulo1">
+                <h1>Conexão de Usuário</h1>
+            </div>
+            <form action="/setuserdata">
+                    <div class="grid-usuario">                
+                        <div>
+                            <label>Usuário web :</label>
+                            <input class="input1" type="text" maxlength="10" id="webUser" name="webUser" placeholder="Usuário para acesso web" value="#webUser#">
+                        </div>
+                        <div>
+                            <label>Senha Web :</label>
+                            <input class="input1" type="text" maxlength="10" id="webPass" name="webPass" placeholder="Senha para acesso web" value="#webPass#">
+                        </div>                                       
+                    <input type="submit" value="SALVAR SENHA">
+                    </div>
+                </form>
+        </section>
+    </div>
+</body>
+</html>

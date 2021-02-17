@@ -1,0 +1,299 @@
+/* reset */ 
+body, h1, h2, h3, p, ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family:  Courier New, serif;
+    background: #032058;
+    color: #FFFFFF;    
+}
+/* menu */
+
+img {
+    width: 135px;
+    height: 40px;
+}
+
+.container-menu {
+    display: flex;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+}
+ 
+.container-iframe {
+    display: flex;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+iframe {
+    border: none;
+}
+
+.menu {
+    background: #FFFFFF;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #1606FF;
+    font-size: 16px;
+    letter-spacing: .1em;
+}
+
+.nav-menu a:hover {
+   color: black;
+}
+
+ .nav-menu {
+     flex: 1;
+     align-self: center;
+ }
+
+ .nav-menu ul {
+     display: flex;
+     list-style: none;
+     flex-wrap: wrap;
+ }
+
+ .nav-menu ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 0 0 0 30px;
+ }
+
+ #check {
+    display: none;
+}
+
+main {
+    padding-top: 20px;
+}
+
+/* status */ 
+
+.titulo {   
+    display: grid;
+    margin: 0 auto;
+    max-width: 1130px;
+    height: 30px;
+    background: #1606FF;
+    box-shadow: 2px 2px 3px #161616;
+    align-content: center;
+}
+
+.subtitulo {   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1130px;
+    height: 30px;
+    background: #1606FF;
+    box-shadow: 2px 2px 3px #161616;
+    align-content: center;
+}
+
+h3 {
+    font-family: Sitka Banner, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-align: center;
+    align-content: center;
+}
+
+h1 {
+    font-family: Sitka Banner, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: .1em;
+    align-content: center;
+    padding-left: 20px;
+}
+
+.infportas {
+    margin: 0 auto;
+    margin-top: 15px;
+    max-width: 690px;
+    height: 120px;
+    border-radius: 20px;
+    background: #E9E9E9;
+    box-shadow: 0 0 5px  #161616;
+    margin-bottom: 15px;
+}
+
+/* status da porta*/
+
+.dot { 
+    padding: 1px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background-color: #fff;
+    cursor: pointer;
+    color: #161616;
+    font-size: 30px;
+}
+.dotyes {
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    background-color: greenyellow;
+    border-radius: 100%;
+}
+
+.dotno {
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.numportas a {
+    margin-top: 10px;
+}
+
+.numportas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 110px;
+    align-items: center;
+    text-align: center;
+}
+
+/* botão de status */
+
+#isFixedIp {
+    display: none;
+}
+
+.switch {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+input:checked+.switch {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.switch.round {
+    position: relative;
+    display: block;
+    border-radius: 34px;
+    width: 20px;
+    text-align: center;
+    float: right;
+    margin: 3px 20px 0 0;
+    transition: 0.25s;
+}
+
+/* tabela */ 
+
+.grid-table#networkData {
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    color: #161616;
+    max-width: 960px;
+    padding: 30px;
+}
+
+.grid-table h1 {
+    font-size: 15px;
+    font-family: Franklin Gothic Book, sans-serif;
+    font-weight: bold;
+}
+
+/* wifi */
+
+.subtitulo1 {
+    display: flex;
+    max-width: 1290px;
+    background: #5A5858;
+    height: 20px;
+    margin-top: 10px;
+}
+.subtitulo1 h1 {
+    font-family: Sitka Banner, sans-serif;
+    font-size: 20px
+}
+.grid-wifi {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    max-width: 600px;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.grid-wifi {
+    font-size: 15p;
+    font-family: Sitka Banner, sans-serif;
+    color: #161616;
+    font-weight: bold;
+}
+
+.select {
+    width: 150px;
+    height: 21px;
+}
+
+.input1 {
+    width: 142px;
+}
+
+.btncheck {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    height: 20px;
+    align-content: center;
+}
+
+.btncheck .switch {
+    grid-column: 4;
+    }
+
+.fontbtn {
+    font-family: Sitka Banner, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: .1em;
+    padding: 1px;
+}
+
+.btncheck .switch.round {
+    transition: none;
+    margin: 0;
+    width: 110px;
+    background: #5A5858;
+    border-radius: 0;
+}
+
+.btncheck input:checked+.switch {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+/* botoes */
+
+
+input[type=submit] {
+    width: 150px;
+    height: 25px;
+    background: #1606FF;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 2px #161616;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(14, 14, 14);
+}

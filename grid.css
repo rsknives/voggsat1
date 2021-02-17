@@ -1,0 +1,104 @@
+.container {
+    max-width: 1290px;
+    height: auto;
+    background: #fff;
+    margin: 0 auto;
+    align-content: center;
+    border: solid;
+    border-width: 15px;
+    border-radius: 30px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.table-base { 
+    max-width: 1130px;
+    margin: 0 auto;
+    height: auto;
+    border: 1px solid;
+    border-color: #BEBEBE;
+    background: #E9E9E9;
+    border-radius: 0 0 30px 30px;
+}
+
+.table-base .grid-table {
+    margin: 0 auto;
+}
+
+.status1 {
+    background: #BEBEBE;
+}
+
+.status2 {
+    background: #fff;
+}
+
+.status3 {
+    border-right: 1px solid;
+    border-color: #7D7878;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.status4 {
+    border-left: 1px solid;
+    border-color: #7D7878;
+}
+
+.status5 {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Wifi */ 
+
+.base {
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    align-content: center;
+    padding-bottom: 15px;
+    border-top: 1px solid;
+    border-color: #5A5858;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 400px;
+    grid-gap: 5px;
+    text-align: right;
+    padding: 5px;
+}
+
+.grid-form label {
+    font-size: 15p;
+    font-family: Sitka Banner, sans-serif;
+    color: #161616;
+    font-weight: bold;
+}
+
+#networkData {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grid-usuario {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.grid-usuario {
+    font-size: 15p;
+    font-family: Sitka Banner, sans-serif;
+    color: #161616;
+    font-weight: bold;
+}

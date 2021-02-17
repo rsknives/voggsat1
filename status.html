@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voggsat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-sacale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" 
+    href="style.css">
+    <link rel="stylesheet" type="text/css" 
+    href="grid.css">
+    <link rel="stylesheet" type="text/css" 
+    href="responsivo.css">  
+    <script type="text/javascript" src="./james.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <section class="titulo">
+            <h3>STATUS DAS PORTAS</h3>
+        </section>
+        <section class="infportas">
+            <div class="numportas" id="exp1">
+                <a onclick="ap(1)"><span id="dot1" class="dot">01</span> </a>
+                <a onclick="ap(2)"><span id="dot2" class="dot">02</span> </a>
+                <a onclick="ap(3)"><span id="dot3" class="dot">03</span> </a> 
+                <a onclick="ap(4)"><span id="dot4" class="dot">04</span> </a> 
+                <a onclick="ap(5)"><span id="dot5" class="dot">05</span> </a> 
+                <a onclick="ap(6)"><span id="dot6" class="dot">06</span> </a> 
+                <a onclick="ap(7)"><span id="dot7" class="dot">07</span> </a> 
+                <a onclick="ap(8)"><span id="dot8" class="dot">08</span> </a> 
+                <a onclick="ap(9)"><span  id="dot9"  class="dot">09</span> </a>
+                <a onclick="ap(10)"><span id="dot10" class="dot">10</span> </a>
+                <a onclick="ap(11)"><span id="dot11" class="dot">11</span> </a>
+                <a onclick="ap(12)"><span id="dot12" class="dot">12</span> </a>
+                <a onclick="ap(13)"><span id="dot13" class="dot">13</span> </a>
+                <a onclick="ap(14)"><span id="dot14" class="dot">14</span> </a>
+                <a onclick="ap(15)"><span id="dot15" class="dot">15</span> </a>
+                <a onclick="ap(16)"><span id="dot16" class="dot">16</span> </a>
+            </div>
+        </section>
+        
+        <section class="table-base">
+            <div class="subtitulo">
+                <label><h1>Status</h1></label>
+                  <label class="switch">
+                  <input type="checkbox"  name="isFixedIp" id="isFixedIp"
+                    onclick="checkSwitch('isFixedIp','networkData')" #isFixedIp#>
+                   <span class="switch round">></span>
+                </label>
+            </div>
+            <div class="grid-table" id="networkData"  style="display: none;">
+
+                <div class="status1 status6"> <h1>Placa</h1> </div>
+                <div class="status1 status3 status6"> <h1>JAMAINRXID</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Serial</h1> </div>
+                <div class="status1 status5 status7"> <h1>#serial#</h1> </div>
+
+                <div class="status2 status6"> <h1>Expansão</h1> </div>
+                <div class="status2 status3 status6"> <h1>#expansao#</h1> </div>
+
+                <div class="status2 status4 status7"> <h1>Nome do Host</h1> </div>
+                <div class="status2 status5 status7"> <h1>#hostname#</h1> </div>
+
+                <div class="status1 status6"> <h1>IP Interno</h1> </div>
+                <div class="status1 status3 status6"> <h1>#sysIP#</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Tensão da Placa</h1> </div>
+                <div class="status1 status5 status7" id="lbVoltag"> <h1>#activeDT#</h1> </div>
+
+                <div class="status2 status6"> <h1>Inicialização</h1> </div>
+                <div class="status2 status3 status6"><h1>#bootDT#</h1></div>
+
+                <div class="status2 status4 status7"> <h1>Tempo Ativo</h1> </div>
+                <div class="status2 status5 status7" id="lbRunTime"><h1>#activeDT#</h1> </div>
+
+                <div class="status1 status6"> <h1>Versão do Software</h1> </div>
+                <div class="status1 status3 status6"> <h1>#swVersion#</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Data do Software</h1> </div>
+                <div class="status1 status5 status7"> <h1>#swBuild#</h1> </div>
+
+                <div class="status2 status6"> <h1>Versão da Interface</h1> </div>
+                <div class="status2 status3 status6"> <h1>#fsVersion#</h1> </div>
+
+                <div class="status2 status4 status7"> <h1>Data da Interface</h1> </div>
+                <div class="status2 status5 status7"> <h1>#fsBuild#</h1> </div>
+
+                <div class="status1 status6"> <h1>Mqtt conectado</h1> </div>
+                <div class="status1 status3 status6" id="mqttIsOn"> <h1>#mqtt#</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Mqtt Subriscrição</h1> </div>
+                <div class="status1 status5 status7"> <h1>#pathMqtt#</h1> </div>
+
+                <div class="status2 status6"> <h1>IP Externo</h1> </div>
+                <div class="status2 status3 status6"> <h1>#extIP#</h1> </div>
+
+                <div class="status2 status4 status7"> <h1>Wifi</h1> </div>
+                <div class="status2 status5 status7"> <h1>#wifi#</h1> </div>
+
+                <div class="status1 status6"> <h1>IP Cliente</h1> </div>
+                <div class="status1 status3 status6"> <h1>#clientIP#</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Navegador</h1> </div>
+                <div class="status1 status5 status7"> <h1>#userAgent#</h1> </div>
+
+                <div class="status2 status6"> <h1>Total Tag</h1> </div>
+                <div class="status2 status3 status6"> <h1>#rfidLength#</h1> </div>
+
+                <div class="status2 status4 status7"> <h1>Total Controle</h1> </div>
+                <div class="status2 status5 status7"> <h1>#433Length#</h1> </div>
+
+                <div class="status1 status6"> <h1>Total Senhas</h1> </div>
+                <div class="status1 status3 status6"> <h1>#passLength#</h1> </div>
+                <div class="status4"> </div>
+
+            </div>
+        </section>
+    </div>    
+</body>
+</html>

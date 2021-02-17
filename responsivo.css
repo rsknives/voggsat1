@@ -1,0 +1,175 @@
+/* responsivo */
+
+@media ( min-width: 750px) and (max-width: 1290px) {
+
+
+}
+
+@media ( max-width: 749px) {
+ 
+  .container {
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+    .img {
+        float: right;
+    }
+    .menu {
+        position: relative;
+    }    
+    .nav-menu ul {
+        position: fixed;
+        width: 40%;
+        height: auto;
+        background: #032058;
+        top: 65px;
+        right: -100%;
+        text-align: center;      
+        transition: all .5s;
+        display: block;
+        padding: 10px;
+    }
+    
+    .nav-menu ul li {
+        display: block;
+    }
+    
+    .nav-menu ul li a {
+      color: #fff;
+      padding: 2px;
+    }
+    
+    #check:checked ~ ul {
+        right: 0;
+    }
+    #check {
+        position: relative;
+        opacity: 0;
+      }
+      
+    .label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        width: 30px;  
+        padding: 10px 0; 
+        float: right;
+    }
+      
+    .label span{
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background: #032058;
+        transition: 0.25s ease-in-out;     
+      }
+      
+    .label span:nth-child(1){
+        top: 0;
+      }
+      
+    .label span:nth-child(2){
+        top: 8px;
+      }
+      
+    .label span:nth-child(3){
+        top: 16px;
+      }
+      
+    #check:checked + label span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 8px;
+      }
+      
+    #check:checked + label span:nth-child(2){
+        opacity: 0;
+      }
+      
+    #check:checked + label span:nth-child(3){
+        transform: rotate(45deg);
+        top:8px;
+      }
+
+      main {
+        padding-top: 5px;
+    }
+
+/* status */ 
+
+h3 {
+  font-size: 20px;
+}
+
+.grid-table#networkData {
+  grid-template-columns: 1fr 1fr ;
+  color: #161616;
+  max-width: 960px;
+  padding: 0px;
+  grid-gap: 0;
+}
+
+.grid-table h1 {
+  font-size: 12px;
+}
+
+.dot { 
+  font-size: 25px;
+}
+
+.status6 {
+  background: #BEBEBE;
+}
+
+.status7 {
+  background: #fff;
+}
+
+.status3 {
+  border-right: none;
+  border-color: #7D7878;
+  text-align: right;
+  padding-right: none;
+}
+
+.status4 {
+  border-left: none;
+  border-color: #7D7878;
+}
+
+.status5 {
+  text-align: right;
+  padding-right: none;
+}
+
+/* Wifi */
+
+#networkData {
+  grid-template-columns: 1fr;
+  max-width: 300px;
+  grid-gap: 10px;
+}
+
+.grid-wifi {
+  grid-template-columns: 1fr;
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: right;
+  grid-gap: 10px;
+}
+
+.grid-usuario { 
+  grid-template-columns: 1fr;
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: right;
+  grid-gap: 10px;
+}
+
+input[type=submit] {
+  margin: 0 auto;
+}
+    
+}
