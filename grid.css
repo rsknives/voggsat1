@@ -129,3 +129,15 @@
 .grid-form1 .item1 { 
     grid-column: 1;
 }
+
+/* radio */
+
+.baseradio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    align-content: center;
+    padding-bottom: 15px;
+}
