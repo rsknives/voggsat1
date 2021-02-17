@@ -47,6 +47,7 @@
 .status4 {
     border-left: 1px solid;
     border-color: #7D7878;
+    height: 17px;
 }
 
 .status5 {
@@ -76,7 +77,7 @@
 }
 
 .grid-form label {
-    font-size: 15p;
+    font-size: 15px;
     font-family: Sitka Banner, sans-serif;
     color: #161616;
     font-weight: bold;
@@ -97,8 +98,34 @@
 }
 
 .grid-usuario {
-    font-size: 15p;
+    font-size: 15px;
     font-family: Sitka Banner, sans-serif;
     color: #161616;
     font-weight: bold;
+}
+
+/* server */
+
+.grid-form1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    text-align: right;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.grid-form1 label {
+    font-size: 15px;
+    font-family: Sitka Banner, sans-serif;
+    color: #161616;
+    font-weight: bold;
+}
+
+.grid-form1 .select {
+    grid-column: 2 / span 3;
+}
+
+.grid-form1 .item1 { 
+    grid-column: 1;
 }
