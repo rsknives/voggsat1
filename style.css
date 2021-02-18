@@ -191,6 +191,21 @@ h1 {
     display: none;
 }
 
+#rfIdOffline1Active {
+    display: none;
+}
+
+#rfIdOffline1Remote {
+    display: none;
+}
+
+#rfIdOffline2Active {
+    display: none;
+}
+#rfIdOffline2Remote {
+    display: none;
+}
+
 .switch {
     color: #ffffff;
     font-size: 18px;
@@ -271,6 +286,10 @@ input:checked+.switch {
 
 .input3 {
     width: 200px ;
+}
+
+.input4 {
+    width: 208px;
 }
 
 .btncheck {
@@ -375,6 +394,18 @@ input:checked+.slider {
     padding: 3px;
     max-width: 300px;
     height: 40px;
+    cursor: pointer;
+}
+
+.slider2 {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 3px;
+    max-width: 300px;
+    height: 40px;
+    cursor: pointer;
+    padding-top: 12px;
 }
 
 .submit1 {
@@ -430,4 +461,18 @@ input.buttonlayer1 {
     border-radius: 30px;
     border:none;
     cursor: pointer;
+}
+
+.checkbox1 {
+    max-width: 200px;
+    height: 40px;
+    background: #1606FF;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 2px #161616;    
+}
+
+.checkbox1 input[type=submit] {
+    width: 200px;
 }
