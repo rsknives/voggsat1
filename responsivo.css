@@ -107,11 +107,15 @@ h3 {
   font-size: 20px;
 }
 
+h1 {
+  font-size: 17px;
+}
+
 .grid-table#networkData {
   grid-template-columns: 1fr 1fr ;
   color: #161616;
   max-width: 960px;
-  padding: 0px;
+  padding: 15px;
   grid-gap: 0;
 }
 
@@ -264,6 +268,54 @@ table {
 
 }
 
+.grid-tablestatus {
+  grid-template-columns: 1fr 1fr ;
+  color: #161616;
+  max-width: 960px;
+  padding: 15px;
+  grid-gap: 0;
+
+}
+
+.grid-table#networkData .btn2 {
+  grid-column: 2;
+}
+
+.status8 {
+  display: none;
+}
+.btn3 {
+   background: #fff;
+}
+
+.submit2 input[type=submit] {
+  box-shadow: none;
+  height: 18px;
+  font-size: 10px;
+  max-width: 50px
+}
+
+.submit2 input[type=file]{
+  max-width: 118px;
+  padding-left: 5px;
+  font-size: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.btn2.status5 {
+  padding: 0;
+}
+
+h1 {
+  display: grid;
+  padding-top: 3px;
+}
+
+.basebtn1 input[type=button] {
+  width: 90px;
+
+}
 
 }
 
