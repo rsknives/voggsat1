@@ -224,7 +224,6 @@ input:checked+.switch {
     width: 20px;
     text-align: center;
     float: right;
-    margin: 3px 20px 0 0;
     transition: 0.25s;
 }
 
@@ -579,3 +578,59 @@ input.buttonlayer1 {
     cursor: pointer;
   }
 
+  /* system */
+
+
+.submit2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+    height: 25px;
+    max-width: 300px;
+    background: #1606FF;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 2px #161616;
+    align-items: center;
+}
+
+.submit2 input[type=file]{
+    max-width: 118px;
+    padding-left: 25px;
+}
+.submit2 input[type=submit] {
+    box-shadow: none;
+    height: 18px;
+    font-size: 12px;
+}
+
+.grid-table#networkData .btn2 {
+    grid-column: 3 / span 2;
+}
+
+.btn2.status2 {
+    height: 25px;
+}
+
+.btn3.status2 {
+    height: 25px;
+}
+
+.basebtn1 input[type=button] {
+    width: 150px;
+    height: 25px;
+    background: #1606FF;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 2px #161616;
+}
+
+.basebtn1 input[type=button]:hover {
+    background: black;
+}
+
+.basebtn1 div {
+    margin: 0 auto;
+}
