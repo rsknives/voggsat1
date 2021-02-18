@@ -292,6 +292,10 @@ input:checked+.switch {
     width: 208px;
 }
 
+.input5 {
+    width: 100%;
+}
+
 .btncheck {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;  
@@ -438,6 +442,8 @@ table {
     background: #1606FF;
     text-align: left;
     padding-left: 10px;
+    font-family: system-ui;
+    font-size: 12px;
 }
 
 .button {
@@ -476,3 +482,100 @@ input.buttonlayer1 {
 .checkbox1 input[type=submit] {
     width: 200px;
 }
+
+/* Gatilho */ 
+
+.text input[type=text] {
+
+    width: 100%;
+    height: 25px;
+}
+
+.basebtn input[type=button] {
+    width: 150px;
+    height: 25px;
+    background: #1606FF;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 2px #161616;
+}
+
+.basebtn input[type=button]:hover {
+    background: black;
+}
+
+.basebtn div {
+    margin: 0 auto;
+}
+
+
+
+.buttonslayer {
+    background: #1606FF;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;   
+    width: 200px;
+    height: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #161616;
+} 
+.buttonslayer:hover {
+    background-color: #000000;
+}
+
+.base .mybtn {
+    display: grid;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fechado {
+    display: none;
+    text-align: center;
+    color: #000000;
+}
+
+/* popup da Tabela*/
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.8); 
+  }
+  
+  .modal-content {
+    background-color: #E9E9E9;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid rgb(49, 48, 48);
+    max-width: 1080px;
+  }
+  
+  
+  .close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
