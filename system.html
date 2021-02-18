@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voggsat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-sacale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" 
+    href="style.css">
+    <link rel="stylesheet" type="text/css" 
+    href="grid.css">
+    <link rel="stylesheet" type="text/css" 
+    href="responsivo.css">  
+    <script type="text/javascript" src="./james.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <section class="table-base">
+            <div class="subtitulo">
+                <label><h1>Status</h1></label>                 
+            </div>
+         <div class="grid-table">
+            <div class="grid-tablestatus">
+
+                <div class="status1 status6"> <h1>Placa</h1> </div>
+                <div class="status1 status3 status6"> <h1>JAMAINRXID</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Serial</h1> </div>
+                <div class="status1 status5 status7"> <h1>#serial#</h1> </div>
+
+                <div class="status2 status6"> <h1>Expansão</h1> </div>
+                <div class="status2 status3 status6"> <h1>#expansao#</h1> </div>
+
+                <div class="status2 status4 status7"> <h1>Nome do Host</h1> </div>
+                <div class="status2 status5 status7"> <h1>#hostname#</h1> </div>
+
+                <div class="status1 status6"> <h1>IP Interno</h1> </div>
+                <div class="status1 status3 status6"> <h1>#sysIP#</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Tensão da Placa</h1> </div>
+                <div class="status1 status5 status7" id="lbVoltag"> <h1>#activeDT#</h1> </div>
+        
+                <div class="status2 status6"> <h1>Mqtt conectado</h1> </div>
+                <div class="status2 status3 status6" id="mqttIsOn"> <h1>#mqtt#</h1> </div>
+
+                <div class="status2 status4 status7"> <h1>Mqtt Subriscrição</h1> </div>
+                <div class="status2 status5 status7"> <h1>#pathMqtt#</h1> </div>
+
+                <div class="status1 status6"> <h1>IP Externo</h1> </div>
+                <div class="status1 status3 status6"> <h1>#extIP#</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Wifi</h1> </div>
+                <div class="status1 status5 status7"> <h1>#wifi#</h1> </div>
+
+                <div class="status2 status6"> <h1>IP Cliente</h1> </div>
+                <div class="status2 status3 status6"> <h1>#clientIP#</h1> </div>
+
+                <div class="status2 status4 status7"> <h1>Navegador</h1> </div>
+                <div class="status2 status5 status7"> <h1>#userAgent#</h1> </div>
+
+
+            </div>
+        </div>
+        </section>
+    </br>   
+        <section class="table-base">
+            <div class="subtitulo">
+                <label><h1>Status da Atualização</h1></label>
+                  <label class="switch">
+                  <input type="checkbox"  name="isFixedIp" id="isFixedIp"
+                    onclick="checkSwitch('isFixedIp','networkData')" #isFixedIp#>
+                   <span class="switch round">></span>
+                </label>
+            </div>
+            <div class="grid-table" id="networkData"  style="display: none;">
+
+                <div class="status1 status6"> <h1>Versão do Software Atual</h1> </div>
+                <div class="status1 status3 status6"> <h1>#swVersion#</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Build do Software</h1> </div>
+                <div class="status1 status5 status7"> <h1>#swBuild#</h1> </div>
+
+                <div class="status2 status6"> <h1>Versão da Interface Atual</h1> </div>
+                <div class="status2 status3 status6"> <h1>#fsVersion#</h1> </div>
+
+                <div class="status2 status4 status7"> <h1>Build dos Interface</h1> </div>
+                <div class="status2 status5 status7"> <h1>#fsBuild#</h1> </div>
+
+                <div class="status1 status6"> <h1>Nova Versão do Software</h1> </div>
+                <div class="status1 status3 status6"> <h1>#swVersionNew#</h1> </div>
+
+                <div class="status1 status4 status7"> <h1>Build do Software</h1> </div>
+                <div class="status1 status5 status7"> <h1>#swBuildNew#</h1> </div>
+        
+                <div class="status2 status6"> <h1>Nova Versão dos Interface</h1> </div>
+                <div class="status2 status3 status6"> <h1>#fsVersionNew#</h1> </div>
+
+                <div class="status2 status4 status7"> <h1>Build dos Interface</h1> </div>
+                <div class="status2 status5 status7"> <h1>#fsBuildNew#</h1> </div>
+
+                <div class="status1 status6"> <h1>Situação</h1> </div>
+                <div class="status1 status3 status6"> <h1>#status#</h1> </div>
+
+                <div class="status1 status4 status7 status8"> <h1></h1> </div>
+                <div class="status1 status5 status7 status8"> <h1></h1> </div>
+
+                
+                <div class="btn3 status2 status6"> <h1>Atualização Manual :</h1> </div>
+                <div class="btn3 status2 status6 status8"> <h1></h1> </div>
+
+                <div class="btn2 status2 status5 status7"> 
+                 <form method='POST' action='upload' enctype='multipart/form-data'>
+                    <div class="submit2">							
+                        <input  type='file' name='update' placeholder="Arquivo Permissões">
+                        <input  type='submit' value='UPLOAD'>
+                    </div>                   	
+                 </form>                  
+                </div>
+            </div>
+        </section>
+    </br>
+        <section class="table-base2">
+
+            <div class="basebtn1">
+
+                <input  class="buttonlayer" type="button" value="Verificar" onclick="checkUpdate()">
+                <input  class="buttonlayer" type="button" value="Atualizar" onclick="doUpdate()">
+                <input class="buttonlayer" type="button" value="Reset" onclick="doReset()">
+            </div>	
+
+        </section>
+
+    </div>
+</body>
+</html>
