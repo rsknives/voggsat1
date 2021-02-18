@@ -187,18 +187,46 @@
                 </div>    
             </div>                
             </form>        
-        </section>
-        <section class="table-base1">
-
-            <div class="button">
-                <input  class="buttonlayer" type="button" value="<" onclick="priorPage('433')">
-                <input  class="buttonlayer1" type="button" value="" onclick="loadData('433')">
-                <input class="buttonlayer" type="button" value=">" onclick="nextPage('433')">
-            </div>
-             
-            <table id="lines">            
-            </table>
-            </section>
+        </section>  
+            <section class="base">
+                <div class="mybtn">
+                     <button class="buttonslayer" id="myBtn">INFORMAÇÃO DA TABELA</button>
+                </div>
+                
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="table-base1">
+                            <div class="button">
+                                <input  class="buttonlayer" type="button" value="<" onclick="priorPage('433')">
+                                <input  class="buttonlayer1" type="button" value="" onclick="loadData('433')">
+                                <input class="buttonlayer" type="button" value=">" onclick="nextPage('433')">
+                            </div>
+                             
+                            <table id="lines"> 
+                            </table>
+                        </div>
+                        <div class="fechado">
+                            <p>FAVOR VIRAR A TELA DO CELULAR PARA VIZUALIAR</p>
+                        </div>
+                    </div> 
+                </div>        
+                <script>
+                     var modal = document.getElementById("myModal");    
+                     var btn = document.getElementById("myBtn");
+                     var span = document.getElementsByClassName("close")[0];
+                     btn.onclick = function() {
+                       modal.style.display = "block";
+                    }
+                     span.onclick = function() {
+                     modal.style.display = "none";
+                    }
+                     window.onclick = function(event) {
+                     if (event.target == modal) {
+                     modal.style.display = "none";
+                    }
+                    }
+                </script>                 
     </div>
 </body>
 </html>
