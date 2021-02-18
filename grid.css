@@ -157,3 +157,23 @@
 .grid-form .inputsalvar {
     grid-column: 2;
 }
+
+/* wiegand */
+
+#rfIdOffline1Data {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+#rfIdOffline2Data {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.grid-form2 {
+    display: grid;
+    margin-top: 50px;
+    grid-gap: 10px;
+}
