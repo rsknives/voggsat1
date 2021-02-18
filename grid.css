@@ -37,10 +37,12 @@
 
 .status1 {
     background: #BEBEBE;
+    height: 18px;
 }
 
 .status2 {
     background: #fff;
+    height: 18px;
 }
 
 .status3 {
@@ -53,7 +55,7 @@
 .status4 {
     border-left: 1px solid;
     border-color: #7D7878;
-    height: 17px;
+    height: 18px;
 }
 
 .status5 {
@@ -195,4 +197,28 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+}
+
+.grid-tablestatus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #161616;
+    max-width: 960px;
+    padding: 30px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.basebtn1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 5px;
+    float: right;
+}
+
+.table-base2 { 
+    max-width: 1130px;
+    margin: 0 auto;
+    height: auto;
 }
