@@ -177,3 +177,22 @@
     margin-top: 50px;
     grid-gap: 10px;
 }
+
+/* gatilho */
+
+.grid-form .text {
+    grid-column: 1/span 2;
+}
+
+.grid-formbase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.basebtn {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
