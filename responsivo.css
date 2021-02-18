@@ -200,6 +200,47 @@ table {
 .baseradio {
   grid-template-columns: 1fr;
   grid-gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* wiegend */ 
+
+.input4 {
+  width: 158px;
+}
+
+.input3 {
+  width: 150px;
+}
+
+
+#rfIdOffline1Data {
+  grid-template-columns: 1fr;
+  max-width: 300px;
+}
+
+#rfIdOffline2Data {
+  grid-template-columns: 1fr;
+  max-width: 300px;
+
+}
+
+.grid-form2 {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.grid-form2 input {
+  margin-left: 25px;
+}
+
+#rfIdOffline1Data .grid-form {
+  max-width: 250px;
+}
+
+#rfIdOffline2Data .grid-form {
+  max-width: 250px;
 }
 
 }
