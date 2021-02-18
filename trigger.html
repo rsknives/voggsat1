@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voggsat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-sacale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" 
+    href="style.css">
+    <link rel="stylesheet" type="text/css" 
+    href="grid.css">
+    <link rel="stylesheet" type="text/css" 
+    href="responsivo.css">  
+    <script type="text/javascript" src="./james.js"></script>
+</head>
+<body onload="getGrid('trigger')">
+    <div class="container">
+        <section class="table-base">
+            <div class="titulo">
+            <h3>GATILHO</h3>
+            </div>
+                 <div class="subtitulo1">
+                     <h1>Descrição do Gatilho :</h1>
+                 </div>
+                </br>
+                 <form action="/addTrigger">
+
+                    <input type="hidden" id="version" name="version" value="1.0" />
+                <div class="base">    
+                    <div class="grid-formbase">
+                    <div class="grid-form">		
+                    <div class="text">
+                        <input type="text" maxlength="30" id="description" name="description"
+						placeholder="Descrição do gatilho">
+                    </div>
+
+                    <div class="item1">
+                        <label>Porta Gatilho :</label>
+                    </div>
+                    <div>
+                        <select class="input5" id="portTrigger" name="portTrigger" placeholder="Selecione a porta do gatilho.">
+                        </select>
+                    </div>
+
+                    <div class="item1">
+                        <label>Porta Destino :</label>
+                    </div>
+                    <div>
+                        <select class="input5" id="portTarget" name="portTarget" placeholder="Selecione a porta destino.">
+                        </select>
+                    </div>
+
+                    <div class="item1">
+                        <label>Tipo de Gatilho :</label>
+                    </div>
+                    <div>
+                        <select class="input5" id="type" name="type" placeholder="Selecione o tipo do gatilho." >
+                            <option value="1">PORTA ASSOCIADA</option>
+                            <option value="2">PORTA DEPENDENTE (FUTURO)</option>
+                            <option value="3">PORTA VALOR IGUAL</option>
+                            <option value="4">PORTA VALOR MAIOR</option>
+                            <option value="5">PORTA MENOR</option>
+                        </select>
+                    </div>           
+    
+                    <div class="item1">
+                        <label>Comando :</label>
+                    </div>
+                    <div>
+                        <select class="input5" id="command" name="command" placeholder="Selecione a porta do gatilho.">
+                            <option value="1">Troca de Status</option>
+                            <option value="2">Pulso</option>
+                            <option value="3">Define Status</option>
+                        </select>
+                    </div>
+
+                    <div class="item1">
+                        <label>Status da Porta :</label>
+                    </div>
+                    <div>
+                        <input class="input5" type="text" maxlength="5" id="portStatus" name="portStatus"
+                            placeholder="Ex: 0(ON) ou 1(OFF)"
+                            onkeypress="return event.charCode >= 46 && event.charCode <= 57">
+                    </div>
+
+                    <div class="item1">
+                        <label>Valor da porta :</label>
+                    </div>
+                    <div>
+                            <input class="input5" type="text" maxlength="5" id="portValue" name="portValue"
+                            placeholder="Ex: 0(ON) ou 1(OFF)"
+                            onkeypress="return event.charCode >= 46 && event.charCode <= 57">
+                    </div>
+                    </div>  
+
+                
+                    <div class="basebtn">
+                        
+                            <div>
+                            <input class="buttonlayer" type="submit" value="SALVAR">
+                            </div>
+                            <div>
+                            <input class="buttonlayer" type="button" value="LIMPAR" onclick="clearTrigger()">
+                            </div>	
+
+                        <form method='POST' action='upload' enctype='multipart/form-data'>
+                            <div class="submit1">							
+                                <input  type='file' name='update' placeholder="Arquivo Permissões">
+                                <input  type='submit' value='UPLOAD'>
+                            </div>                    	
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                  </form>   
+
+            <section class="base">
+                <div class="mybtn">
+                     <button class="buttonslayer" id="myBtn">INFORMAÇÃO DA TABELA</button>
+                </div>
+                
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="table-base1">
+                            <table id="lines"> 
+                            </table>
+                        </div>
+                        <div class="fechado">
+                            <p>FAVOR VIRAR A TELA DO CELULAR PARA VIZUALIAR</p>
+                        </div>
+                    </div> 
+                </div>        
+                <script>
+                     var modal = document.getElementById("myModal");    
+                     var btn = document.getElementById("myBtn");
+                     var span = document.getElementsByClassName("close")[0];
+                     btn.onclick = function() {
+                       modal.style.display = "block";
+                    }
+                     span.onclick = function() {
+                     modal.style.display = "none";
+                    }
+                     window.onclick = function(event) {
+                     if (event.target == modal) {
+                     modal.style.display = "none";
+                    }
+                    }
+                </script>
+            </section>
+    </section>
+
+</div>       
+</body>
+</html>
