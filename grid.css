@@ -222,3 +222,16 @@
     margin: 0 auto;
     height: auto;
 }
+
+.subtitulo2 {   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1130px;
+    height: 30px;
+    background: #1606FF;
+    box-shadow: 2px 2px 3px #161616;
+    align-content: center;
+    align-items: center;
+}
+
