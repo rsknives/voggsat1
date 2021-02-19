@@ -317,6 +317,18 @@ h1 {
 
 }
 
+.subtitulo2 {     
+  grid-template-columns: 1fr 1fr 1fr;  
+}
+
+.subtitulo2 .atualizacao {
+  grid-column: 1 / span 2;
+}
+
+.subtitulo2 .switch {
+  grid-column: 3;
+}
+
 }
 
 
